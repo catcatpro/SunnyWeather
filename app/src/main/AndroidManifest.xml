@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.sunnyseather.android">
+    xmlns:tools="http://schemas.android.com/tools">
     <!-- 允许访问网络，必选权限 -->
     <uses-permission android:name="android.permission.INTERNET" /> <!-- 允许读设备等信息，用于问题排查 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 允许获取网络状态 -->
@@ -26,7 +25,8 @@
         <activity
             android:name=".TestAmap"
             android:exported="false" />
-
+        <activity android:name=".ui.weather.WeatherActivity"
+            android:exported="false"/>
         <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="122d25653eb1757705c0ffa59800383d" />
